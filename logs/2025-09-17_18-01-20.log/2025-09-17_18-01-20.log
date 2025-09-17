@@ -1,0 +1,19 @@
+[2025-09-17 18:01:22,335] 21 root - INFO - Enter data ingestion stage
+[2025-09-17 18:01:22,622] 29 root - INFO - Read the dataset as dataframe
+[2025-09-17 18:01:22,623] 34 root - INFO - Merging all the datasets into a single dataset
+[2025-09-17 18:01:24,993] 49 root - INFO - Train test split initiated
+[2025-09-17 18:01:25,037] 53 root - INFO - train set:         id  week  center_id  meal_id  checkout_price  base_price  emailer_for_promotion  homepage_featured  num_orders  city_code  region_code center_type  op_area   category cuisine
+0  1379560     1         55     1885          136.83      152.29                      0                  0         177        647           56      TYPE_C      2.0  Beverages    Thai
+1  1466964     1         55     1993          136.83      135.83                      0                  0         270        647           56      TYPE_C      2.0  Beverages    Thai
+2  1346989     1         55     2539          134.86      135.86                      0                  0         189        647           56      TYPE_C      2.0  Beverages    Thai
+3  1338232     1         55     2139          339.50      437.53                      0                  0          54        647           56      TYPE_C      2.0  Beverages  Indian
+4  1448490     1         55     2631          243.50      242.50                      0                  0          40        647           56      TYPE_C      2.0  Beverages  Indian
+[2025-09-17 18:01:25,037] 54 root - INFO - Train set shape: (456548, 15)
+[2025-09-17 18:01:25,046] 55 root - INFO - test set:              id  week  center_id  meal_id  checkout_price  base_price  emailer_for_promotion  homepage_featured  num_orders  city_code  region_code center_type  op_area   category cuisine
+456548  1028232   146         55     1885          158.11      159.11                      0                  0           0        647           56      TYPE_C      2.0  Beverages    Thai
+456549  1127204   146         55     1993          160.11      159.11                      0                  0           0        647           56      TYPE_C      2.0  Beverages    Thai
+456550  1212707   146         55     2539          157.14      159.14                      0                  0           0        647           56      TYPE_C      2.0  Beverages    Thai
+456551  1082698   146         55     2631          162.02      162.02                      0                  0           0        647           56      TYPE_C      2.0  Beverages  Indian
+456552  1400926   146         55     1248          163.93      163.93                      0                  0           0        647           56      TYPE_C      2.0  Beverages  Indian
+[2025-09-17 18:01:25,046] 56 root - INFO - Test set shape: (32573, 15)
+[2025-09-17 18:01:27,178] 62 root - INFO - Data Ingestion completed

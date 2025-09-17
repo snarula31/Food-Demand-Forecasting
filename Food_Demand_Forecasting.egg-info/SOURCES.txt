@@ -1,0 +1,7 @@
+README.md
+setup.py
+Food_Demand_Forecasting.egg-info/PKG-INFO
+Food_Demand_Forecasting.egg-info/SOURCES.txt
+Food_Demand_Forecasting.egg-info/dependency_links.txt
+Food_Demand_Forecasting.egg-info/requires.txt
+Food_Demand_Forecasting.egg-info/top_level.txt

@@ -1,0 +1,22 @@
+[2025-09-17 17:58:43,609] 21 root - INFO - Enter data ingestion stage
+[2025-09-17 17:58:43,842] 29 root - INFO - Read the dataset as dataframe
+[2025-09-17 17:58:43,843] 34 root - INFO - Merging all the datasets into a single dataset
+[2025-09-17 17:58:43,996] 41 root - INFO - test data:         id  week  center_id  meal_id  checkout_price  base_price  emailer_for_promotion  homepage_featured  num_orders
+0  1028232   146         55     1885          158.11      159.11                      0                  0           0
+1  1127204   146         55     1993          160.11      159.11                      0                  0           0
+2  1212707   146         55     2539          157.14      159.14                      0                  0           0
+3  1082698   146         55     2631          162.02      162.02                      0                  0           0
+4  1400926   146         55     1248          163.93      163.93                      0                  0           0
+[2025-09-17 17:58:44,007] 42 root - INFO - merged data:         id  week  center_id  meal_id  checkout_price  base_price  emailer_for_promotion  homepage_featured  num_orders  city_code  region_code center_type  op_area   category cuisine
+0  1379560     1         55     1885          136.83      152.29                      0                  0         177        647           56      TYPE_C      2.0  Beverages    Thai
+1  1466964     1         55     1993          136.83      135.83                      0                  0         270        647           56      TYPE_C      2.0  Beverages    Thai
+2  1346989     1         55     2539          134.86      135.86                      0                  0         189        647           56      TYPE_C      2.0  Beverages    Thai
+3  1338232     1         55     2139          339.50      437.53                      0                  0          54        647           56      TYPE_C      2.0  Beverages  Indian
+4  1448490     1         55     2631          243.50      242.50                      0                  0          40        647           56      TYPE_C      2.0  Beverages  Indian
+[2025-09-17 17:58:44,007] 43 root - INFO - merged data shape: (489121, 15)
+[2025-09-17 17:58:44,008] 44 root - INFO - merged data columns: Index(['id', 'week', 'center_id', 'meal_id', 'checkout_price', 'base_price',
+       'emailer_for_promotion', 'homepage_featured', 'num_orders', 'city_code',
+       'region_code', 'center_type', 'op_area', 'category', 'cuisine'],
+      dtype='object')
+[2025-09-17 17:58:46,246] 49 root - INFO - Train test split initiated
+[2025-09-17 17:58:48,440] 56 root - INFO - Data Ingestion completed

@@ -1,0 +1,24 @@
+Metadata-Version: 2.4
+Name: Food-Demand-Forecasting
+Version: 1.0.0
+Author: Shivansh Narula
+Author-email: shivanshnarula@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: scikit-learn
+Requires-Dist: catboost
+Requires-Dist: xgboost
+Requires-Dist: lightgbm
+Requires-Dist: dill
+Requires-Dist: imbalanced-learn
+Requires-Dist: fastapi
+Requires-Dist: uvicorn[standard]
+Requires-Dist: pydantic
+Requires-Dist: python-multipart
+Requires-Dist: flask
+Requires-Dist: streamlit
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist

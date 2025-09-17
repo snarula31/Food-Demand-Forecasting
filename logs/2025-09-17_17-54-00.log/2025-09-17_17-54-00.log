@@ -1,0 +1,5 @@
+[2025-09-17 17:54:11,013] 21 root - INFO - Enter data ingestion stage
+[2025-09-17 17:54:11,374] 29 root - INFO - Read the dataset as dataframe
+[2025-09-17 17:54:11,378] 34 root - INFO - Merging all the datasets into a single dataset
+[2025-09-17 17:54:14,102] 43 root - INFO - Train test split initiated
+[2025-09-17 17:54:16,544] 50 root - INFO - Data Ingestion completed

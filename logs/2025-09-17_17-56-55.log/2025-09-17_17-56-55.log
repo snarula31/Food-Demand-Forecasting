@@ -1,0 +1,18 @@
+[2025-09-17 17:56:57,903] 21 root - INFO - Enter data ingestion stage
+[2025-09-17 17:56:58,183] 29 root - INFO - Read the dataset as dataframe
+[2025-09-17 17:56:58,184] 34 root - INFO - Merging all the datasets into a single dataset
+[2025-09-17 17:56:58,381] 41 root - INFO - test data:         id  week  center_id  meal_id  checkout_price  base_price  emailer_for_promotion  homepage_featured  num_orders
+0  1028232   146         55     1885          158.11      159.11                      0                  0           0
+1  1127204   146         55     1993          160.11      159.11                      0                  0           0
+2  1212707   146         55     2539          157.14      159.14                      0                  0           0
+3  1082698   146         55     2631          162.02      162.02                      0                  0           0
+4  1400926   146         55     1248          163.93      163.93                      0                  0           0
+[2025-09-17 17:56:58,387] 42 root - INFO - weekly_demand data:         id  week  center_id  meal_id  checkout_price  base_price  emailer_for_promotion  homepage_featured  num_orders
+0  1379560     1         55     1885          136.83      152.29                      0                  0         177
+1  1466964     1         55     1993          136.83      135.83                      0                  0         270
+2  1346989     1         55     2539          134.86      135.86                      0                  0         189
+3  1338232     1         55     2139          339.50      437.53                      0                  0          54
+4  1448490     1         55     2631          243.50      242.50                      0                  0          40
+[2025-09-17 17:56:58,387] 43 root - INFO - merged data shape: (489121, 15)
+[2025-09-17 17:57:00,533] 48 root - INFO - Train test split initiated
+[2025-09-17 17:57:02,678] 55 root - INFO - Data Ingestion completed
