@@ -25,15 +25,16 @@ class DataIngestion:
             weekly_demand = pd.read_csv('notebook/data/train.csv')
             center_info = pd.read_csv('notebook/data/fulfilment_center_info.csv') 
             meal_info = pd.read_csv('notebook/data/meal_info.csv')
-            test = pd.read_csv('notebook/data/test.csv')
+            # test = pd.read_csv('notebook/data/test.csv')
             logging.info("Read the dataset as dataframe")
 
             # Adding a placeholder column for predictions in the test dataset
-            test['num_orders'] = 0
+            # test['num_orders'] = 0
             
             logging.info("Merging all the datasets into a single dataset")
             # merging all the data sets into single datset for analysis
-            data = pd.concat([weekly_demand, test], axis=0)
+            # data = pd.concat([weekly_demand, test], axis=0)
+            data = weekly_demand.copy()
             data = data.merge(center_info, on='center_id', how='left')
             data = data.merge(meal_info, on='meal_id', how='left')
 
@@ -47,8 +48,8 @@ class DataIngestion:
             data.to_csv(self.ingestion_config.merged_data_path, index=False)
 
             logging.info("Train test split initiated")
-            train_set = data[data['num_orders'] != 0]
-            test_set = data[data['num_orders'] == 0]
+            train_set = data[data['week'].isin(range(1,136))]
+            test_set = data[data['week'].isin(range(136,146))]
 
             logging.info(f"train set: {train_set.head(5)}")
             logging.info(f"Train set shape: {train_set.shape}")

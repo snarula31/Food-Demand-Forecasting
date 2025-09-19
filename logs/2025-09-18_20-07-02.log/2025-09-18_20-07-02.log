@@ -1,0 +1,3 @@
+[2025-09-18 20:07:06,651] 21 root - INFO - Enter data ingestion stage
+[2025-09-18 20:07:06,962] 29 root - INFO - Read the dataset as dataframe
+[2025-09-18 20:07:06,963] 34 root - INFO - Merging all the datasets into a single dataset
